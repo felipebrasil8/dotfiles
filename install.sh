@@ -19,11 +19,19 @@ main() {
   fi
 
   echo -e "\n"
-  read -r -p "You want to install Hyper.js settings? [y|n] " response
+  read -r -p "You want to install Hyper settings? [y|n] " response
   if valid_response $response; then
     $DOTFILES/hyper/install.sh
   else
     ok "hyper skipped..."
+  fi
+
+  echo -e "\n"
+  read -r -p "You want to install Terminator settings? [y|n] " response
+  if valid_response $response; then
+    $DOTFILES/terminator/install.sh
+  else
+    ok "terminator skipped..."
   fi
 }
 
