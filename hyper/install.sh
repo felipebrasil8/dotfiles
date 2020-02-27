@@ -9,7 +9,7 @@ if [ ! -e "$HOME/.hyper.js" ] ; then
   wget -O hyper.deb  https://releases.hyper.is/download/deb
   ok "Hyper successfully downloaded"
   running "Install hyper..."
-  apt install hyper.deb -y
+  sudo apt install ./hyper.deb -y
   ok "Hyper successfully installed"
 fi
 
