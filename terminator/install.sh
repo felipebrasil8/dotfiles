@@ -5,7 +5,7 @@ source "`dirname $0`"/../lib/enviroments.sh
 
 if [ ! -e "$HOME/.config/terminator/config" ] ; then
   running "Install terminator..."
-  apt install terminator -y
+  sudo apt install terminator -y
   ok "Terminator successfully installed"
 fi
 
